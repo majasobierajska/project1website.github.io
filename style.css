@@ -1,0 +1,41 @@
+body
+{
+	font-family: "Helvetica";
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+	/*margin: 0px;*/
+}
+a {
+  color: inherit; /*no style for hyperlinks*/
+  text-decoration: inherit;
+}
+.zone
+{
+	cursor: pointer;
+}
+/*NAV BAR*/
+.main-nav
+{
+	display: flex;
+	color: #D8D8D8;
+	width: 100%;
+	font-size: 20px;
+	border-radius: 0px;
+	border: 0px;
+	list-style: none;
+	margin-left: auto;
+	margin:32px 152px;
+	padding:0;
+
+}
+.left
+{
+	margin-right: auto;
+}
+.welcome
+{
+	text-align: center;
+	padding:256.5px;
+}
