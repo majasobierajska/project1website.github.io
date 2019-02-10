@@ -47,3 +47,38 @@ li{
     font-size: 25px;
     color: #5D5F65;
 }
+.column
+{
+    position: absolute;
+    top:700px;
+    float: left;
+    height: 700px;
+}
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.text-column
+{
+    width: 50%;
+    background-image: url("bg.png");
+}
+.image-column
+{
+    width: 50%;
+background-image: url("image1.png")
+}
+.about-us
+{
+    text-align: left;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 145px  307px 529px 153px;
+}
+.about-text
+{
+    text-align: left;
+
+}
