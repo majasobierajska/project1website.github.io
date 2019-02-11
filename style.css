@@ -47,10 +47,9 @@ a {
 .welcome
 {
     text-align: center;
-    position: absolute;
-    top: 289px;
-    right:153px;
-    left: 153px;
+    margin-top: 289px;
+    margin-right:153px;
+    margin-left: 153px;
 }
 .welcome-text
 {
@@ -64,10 +63,9 @@ a {
 .column {
     float: left;
     width: 50%;
-    /*position: absolute;*/
-    position: relative;
-    top:700px;
+    margin-top:200px;
     height: 700px;
+    padding: 200px 0px 0px 200px;
   }
   
   /* Clear floats after the columns */
@@ -79,6 +77,6 @@ a {
   }
 .second
 {
-    background-image: url("image1.png")
+    float: right;
 }
  
