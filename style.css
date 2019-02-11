@@ -1,5 +1,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
     
 }
 
@@ -7,28 +11,38 @@ a {
     color: inherit; /*no style for hyperlinks*/
     text-decoration: inherit;
     cursor: pointer;
-  }
-li{
-    display: inline;
 }
-.nav-bar
+
+.navigation-bar
 {
     color: #D8D8D8;
-    font-size: 16px;
-    list-style-type: none;
-    /*float: right;*/
-    position: absolute;
-    top: 32px;
-    /*left: 867px;*/
-    right: 120px;
-}
-.company-name
-{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 152px;
     font-size: 20px;
-    position: absolute;
-    right: 1143px;
-    white-space: nowrap;
+    
 }
+.main-nav {
+    color: #D8D8D8;
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 37px;
+}
+
+/*.main-nav li:last-child {
+    margin-right: 0;
+}*/
+
+/*.right {
+    margin-right: auto;
+}*/
+
 
 .welcome
 {
@@ -47,38 +61,24 @@ li{
     font-size: 25px;
     color: #5D5F65;
 }
-.column
-{
-    position: absolute;
-    top:700px;
+.column {
     float: left;
+    width: 50%;
+    /*position: absolute;*/
+    position: relative;
+    top:700px;
     height: 700px;
-}
-.row:after
-{
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
     content: "";
     display: table;
     clear: both;
-}
-.text-column
+    display: flex;
+  }
+.second
 {
-    width: 50%;
-    background-image: url("bg.png");
+    background-image: url("image1.png")
 }
-.image-column
-{
-    width: 50%;
-background-image: url("image1.png")
-}
-.about-us
-{
-    text-align: left;
-    font-size: 28px;
-    color: #FFFFFF;
-    padding: 145px  307px 529px 153px;
-}
-.about-text
-{
-    text-align: left;
-
-}
+ 
