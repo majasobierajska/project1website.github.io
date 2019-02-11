@@ -65,7 +65,6 @@ a {
     width: 50%;
     margin-top:200px;
     height: 700px;
-    padding: 200px;
     box-sizing: border-box;
   }
   
@@ -76,9 +75,32 @@ a {
     clear: both;
     display: flex;
   }
+.first
+{
+    background-color: #141720;
+}
+.about-us
+{
+    font-size: 28px;
+    color:#FFFFFF;
+    margin-top: 145px;
+    margin-left: 153px;
+    margin-right: 307px;
+}
+.about-lorem
+{
+    font-size: 15px;
+    color: #FFFFFF;
+    line-height: 1.8;
+    margin-top: 52px;
+    margin-left: 153px;
+    margin-right: 117px;
+    word-break: keep-all;
+}
 .second
 {
     box-sizing: border-box;
     padding: 0px;
 }
+/*komentarz*/
  
