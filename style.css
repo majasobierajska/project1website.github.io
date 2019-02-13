@@ -132,13 +132,27 @@ a {
   }
   .time img.oval
   {
-      margin-top: 152px;
+      margin-top: -330px;
       margin-left: auto;
       margin-right: auto;
       display: block;
       position: relative;
       z-index: 2;
       
+  }
+  .time img.oval::before /* doesn't work don't know why*/
+ {
+     content: "2003";
+     display: inline-block;
+ }
+  .time img.oval1
+  {
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      position: relative;
+      z-index: 2;
   }
  .timeline
  {
