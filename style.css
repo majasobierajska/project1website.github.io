@@ -51,56 +51,49 @@ a {
     margin-right:153px;
     margin-left: 153px;
 }
-.welcome-text
+section.welcome h1
 {
     font-size: 44px;
 }
-.welcome-more-text
+section.welcome p
 {
     font-size: 25px;
     color: #5D5F65;
 }
-.column {
-    float: left;
+.about-us {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: auto auto;
     width: 50%;
+    background-color:#141720;
     margin-top:200px;
-    height: 700px;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    display: flex;
-  }
-.first
+section.about-us h2
 {
-    background-color: #141720;
-}
-.about-us
-{
+    grid-column-start: 1;
+    grid-column-end: 3;
     font-size: 28px;
     color:#FFFFFF;
-    margin-top: 145px;
-    margin-left: 153px;
-    margin-right: 307px;
+    padding: 145px 307px 0px 153px;
 }
-.about-lorem
+section.about-us p
 {
+    grid-column-start: 1;
+    grid-column-end: 3;
     font-size: 15px;
     color: #FFFFFF;
     line-height: 1.8;
-    margin-top: 52px;
-    margin-left: 153px;
-    margin-right: 117px;
     word-break: keep-all;
+    padding: 52px 200px 20px 153px;
 }
-.second
+.image-bg
 {
-    box-sizing: border-box;
-    padding: 0px;
+    grid-column-start:3;
+    grid-column-end: 6;
+    display: grid;
+    background-image: url("image1.png");
+    background-size: 50% auto;
 }
 .second img.second
 {
@@ -144,6 +137,11 @@ a {
  {
      content: "2003";
      display: inline-block;
+ }
+ .time img.oval::after
+ {
+     content: "reszta tekstu";
+     display: block;
  }
   .time img.oval1
   {
