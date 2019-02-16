@@ -12,6 +12,10 @@ a {
     text-decoration: inherit;
     cursor: pointer;
 }
+a:hover
+{
+    color:#5D5F65;
+}
 
 .navigation-bar
 {
@@ -34,23 +38,19 @@ a {
     display: inline-block;
     margin-right: 37px;
 }
-
-/*.main-nav li:last-child {
-    margin-right: 0;
-}*/
-
-/*.right {
-    margin-right: auto;
-}*/
-
-
-.welcome
+.zone
 {
-    text-align: center;
-    margin-top: 289px;
-    margin-right:153px;
-    margin-left: 153px;
+    border: 1px solid black;
 }
+.welcome-screen
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
 section.welcome h1
 {
     font-size: 44px;
@@ -60,113 +60,33 @@ section.welcome p
     font-size: 25px;
     color: #5D5F65;
 }
-.about-us {
-    display: grid;
-    grid-column-gap: 0px;
-    grid-template-columns: auto auto;
-    width: 50%;
-    background-color:#141720;
-    margin-top:200px;
-    /*box-sizing: border-box;*/
-  }
-section.about-us h2
+.about-us
 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+.about-us-text
+{
+    background-color:#141720;
+}
+section.text-about-us h2
+{
     font-size: 28px;
     color:#FFFFFF;
     padding: 145px 307px 0px 153px;
 }
-section.about-us p
+section.text-about-us p
 {
-    grid-column-start: 1;
-    grid-column-end: 3;
     font-size: 15px;
     color: #FFFFFF;
     line-height: 1.8;
     word-break: keep-all;
     padding: 52px 200px 20px 153px;
 }
-.image-bg
+#image-about-us
 {
-    grid-column-start:3;
-    grid-column-end: 6;
-    display: grid;
     background-image: url("image1.png");
-    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.second img.second
-{
-    width: 100%;
-    height: 700px; 
-}
-.column2 {
-    float: left;
-    width: 50%;
-    height: 700px;
-    box-sizing: border-box;
-  }
-  
-  /* Clear floats after the columns */
-  .row2:after {
-    content: "";
-    display: table;
-    clear: both;
-    display: flex;
-  }
-  .time img.line
-  {
-      position: relative;
-      top: 0;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      z-index: 1;
-  }
-  .time img.oval
-  {
-      margin-top: -330px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      position: relative;
-      z-index: 2;
-      
-  }
-  .time img.oval::before /* doesn't work don't know why*/
- {
-     content: "2003";
-     display: inline-block;
- }
- .time img.oval::after
- {
-     content: "reszta tekstu";
-     display: block;
- }
-  .time img.oval1
-  {
-      margin-top: 50px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      position: relative;
-      z-index: 2;
-  }
- .timeline
- {
-    font-size: 28px;
-    color: #2b2b2b;
-    margin-top: 142px;
-    margin-left: 115px;
-    /*margin-right: 307px; */
- }
- .timeline-text
- {
-    font-size: 15px;
-    color: #5d5f65;
-    line-height: 1.8;
-    margin-top: 54px;
-    margin-left: 116px;
-    margin-right: 117px;
-    word-break: keep-all;
- }
