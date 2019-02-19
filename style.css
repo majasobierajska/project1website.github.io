@@ -68,7 +68,7 @@ section.welcome p
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
-    width: 50%;
+    width: 100%;
 }
 .about-us-text
 {
@@ -93,10 +93,19 @@ section.text-about-us p
     background-image: url("image1.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: auto;
     
 }
 @media only screen and (max-width: 768px)
 {
-    .about-us-text {width: 100%};
-
+    .about-us
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 300vh;
+    }
+    .about-us-text
+    {
+        height: auto;
+    }
 }
