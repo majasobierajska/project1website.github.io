@@ -6,6 +6,9 @@ body{
     padding: 0px;
     
 }
+* {
+    box-sizing: border-box;
+  }
 
 a {
     color: inherit; /*no style for hyperlinks*/
@@ -65,6 +68,7 @@ section.welcome p
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
+    width: 50%;
 }
 .about-us-text
 {
@@ -89,10 +93,10 @@ section.text-about-us p
     background-image: url("image1.png");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 @media only screen and (max-width: 768px)
 {
-    .about-us {width: 100%}
-    .image-about-us {width: 100%};
+    .about-us-text {width: 100%};
 
 }
