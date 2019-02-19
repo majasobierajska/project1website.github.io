@@ -98,14 +98,28 @@ section.text-about-us p
 }
 @media only screen and (max-width: 768px)
 {
+    .navigation-bar
+    {
+        margin: 10px 50px;
+        font-size: 15px;
+    }
+    .main-nav
+    {
+        font-size: 12px;
+    }
+    section.welcome h1
+    {
+    font-size: 30px;
+    }
+section.welcome p
+    {
+    font-size: 15px;
+    color: #5D5F65;
+    }
     .about-us
     {
         display: grid;
         grid-template-columns: 1fr;
         height: 300vh;
-    }
-    .about-us-text
-    {
-        height: auto;
     }
 }
