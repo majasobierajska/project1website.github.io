@@ -74,7 +74,7 @@ section.text-about-us h2
 {
     font-size: 28px;
     color:#FFFFFF;
-    padding: 145px 307px 0px 153px;
+    padding: 5em 10em 0em 5em;
 }
 section.text-about-us p
 {
@@ -82,11 +82,17 @@ section.text-about-us p
     color: #FFFFFF;
     line-height: 1.8;
     word-break: keep-all;
-    padding: 52px 200px 20px 153px;
+    padding: 3em 10em 3em 5em;
 }
-#image-about-us
+.image-about-us
 {
     background-image: url("image1.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+@media only screen and (max-width: 768px)
+{
+    .about-us {width: 100%}
+    .image-about-us {width: 100%};
+
 }
