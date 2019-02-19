@@ -88,13 +88,13 @@ section.text-about-us p
     word-break: keep-all;
     padding: 3em 10em 3em 5em;
 }
-.image-about-us
+.image-about-us {
+  width: 100%;
+}
+.image-about-us img
 {
-    background-image: url("image1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    
+  display: flex;
+  width: 100%;
 }
 @media only screen and (max-width: 768px)
 {
