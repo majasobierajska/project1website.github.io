@@ -73,6 +73,7 @@ section.welcome p
 .about-us-text
 {
     background-color:#141720;
+    
 }
 section.text-about-us h2
 {
@@ -95,10 +96,12 @@ section.text-about-us p
     width: 100%;
     
 }
-.image-about-us img
+.image-about-us
 {
-    display: flex;
-    width: 100%;
+    background-image: url("image1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*width: 100%;*/
     height: 100%;
 }
 .timeline
@@ -124,33 +127,11 @@ section.timeline-text p
     padding: 2em 10em 0em 5em;
     text-align: left;
 }
-.line
+.timeline-graph
 {
-    display: block;
-    margin-left: 50%;
-    margin-right: 50%;
-    z-index: -1;
-    position: relative;
-}
-.active-oval
-    {
-        z-index: 1;
-        margin-left: 50%;
-        margin-right: 50%;
-        position: relative;
-        top: -321px;
-        left: -8px;
-
-    }
-.active-oval::before
-{
-    content:"text";
-    display: block;
-}
-.active-oval::after
-{
-    content:"text";
-    display:block;
+    background-image: url("Oval.png"), url("oval-bg.png"), url("oval-bg.png"), url("line.png");
+    background-repeat: no-repeat;
+    background-position: 50% 20%, 50% 30%, 50% 40%, top center;
 }
 
 @media only screen and (max-width: 768px)
@@ -179,10 +160,22 @@ section.timeline-text p
         grid-template-columns: 1fr;
         height: 100vh;
     }
+    .about-us-text
+    {
+        height: 100%;
+    }
+    .image-about-us
+    {
+    display: none;
+    }
     .timeline
     {
         display: grid;
         grid-template-columns: 1fr;
         height: 100vh;
+    }
+    .timeline-graph
+    {
+        display: none;
     }
     
