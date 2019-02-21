@@ -133,6 +133,20 @@ section.timeline-text p
     background-repeat: no-repeat;
     background-position: 50% 20%, 50% 30%, 50% 40%, top center;
 }
+.first2003 p
+{
+    margin-top: 20%;
+    margin-left: 30%;
+    
+
+}
+.first2003 p::after
+{
+    content: "String";
+    margin-top: 20%;
+    margin-left: 10%;
+
+}
 
 @media only screen and (max-width: 768px)
 {
