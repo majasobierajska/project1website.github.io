@@ -142,6 +142,10 @@ section.our-service h1
 {
     font-size: 28px;
 }
+.our-service-details
+{
+    height: 100vh;
+}
 .grid-wrapper
 {
     display: grid;
@@ -168,6 +172,111 @@ section.details p
     color: #5D5F65;
 }
 
+.hiring
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+}
+.hiring-text
+{
+    background-color:#141720;
+    
+}
+section.text-hiring h2
+{
+    font-size: 28px;
+    color:#FFFFFF;
+    text-align: left;
+    padding: 3em 10em 0em 3em;
+}
+section.text-hiring p
+{
+    font-size: 15px;
+    color: #FFFFFF;
+    line-height: 1.8;
+    word-break: keep-all;
+    text-align: left;
+    padding: 3em 10em 0em 5em;
+}
+.image-hiring
+{
+    width: 100%;
+    
+}
+.image-hiring
+{
+    background-image: url("hiring.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*width: 100%;*/
+    height: 100%;
+}
+
+.contact
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+}
+.contact-us
+{
+    background-color:#141720;
+    
+}
+section.contact-us-inputs h2
+{
+    font-size: 28px;
+    color:#FFFFFF;
+    text-align: left;
+    padding: 3em 10em 0em 3em;
+}
+section.contact-us-inputs p
+{
+    font-size: 22px;
+    color: #FFFFFF;
+    padding: 3em 10em 0em 5em;
+}
+.image-map
+{
+    width: 100%;
+    
+}
+/*.image-map
+{
+    background-image: url("map.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*width: 100%;*/
+    /*height: 100%;
+}*/
+input
+{
+    background-color: #141720;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 70%;
+    outline: none;
+    border: none;
+    padding: 3px 0px 15px 6px;
+    margin: 2em 4em 0em 4em;
+    box-sizing: border-box;
+    border-bottom: 2px solid #FFFFFF;
+  }
+textarea
+{
+    background-color: #141720;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 70%;
+    outline: none;
+    border: none;
+    margin: 2em 4em 0em 4em;
+    box-sizing: border-box;
+    border-bottom: 2px solid #FFFFFF;
+}
 @media only screen and (max-width: 768px)
 {
     .navigation-bar
@@ -212,4 +321,21 @@ section.details p
     {
         display: none;
     }
+    
+    .hiring
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100hv;
+    }
+    .image-hiring
+    {
+        display: none;
+    }
+    .contact
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+    }
+
     
