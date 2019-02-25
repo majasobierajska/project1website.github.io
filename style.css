@@ -153,16 +153,20 @@ section.our-service h1
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 .box{
+  /*
     display: flex;
     flex-direction: column;
+  */
     padding: 2em 2em 2em 2em;
     text-align: left;
 }
+/*
 .box img
 {
 
     float: right;
 }
+*/
 .box p
 {
     text-align: left;
