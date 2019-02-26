@@ -128,7 +128,47 @@ section.timeline-text p
     text-align: left;
 }
 /*timeline*/
-
+.time
+{
+    position: relative;
+}
+.time::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 50%;
+    background-color: #D4D4D4;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+.year
+{
+    margin-left: 40%;
+}
+.description::after
+{
+    content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.started
+{
+    margin-top: 10%;
+}
+.description
+{
+    margin-left: 55%;
+    position: relative;
+}
   .our-service
 {
     display: flex;
@@ -137,6 +177,10 @@ section.timeline-text p
     text-align: center;
     height: 50px;
 }
+p {
+    margin: 0;
+    font-size: 16px;
+  }
 
 section.our-service h1
 {
@@ -153,7 +197,7 @@ section.our-service h1
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 .box{
-    padding: 2em 2em 2em 2em;
+    padding: 3em 2em 2em 3em;
     text-align: left;
 }
 .box p
@@ -348,6 +392,10 @@ hr
     {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+    }
+    .contact-us
+    {
+        height: 100vh;
     }
 
     
