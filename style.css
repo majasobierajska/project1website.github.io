@@ -153,15 +153,8 @@ section.our-service h1
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 .box{
-    display: flex;
-    flex-direction: column;
     padding: 2em 2em 2em 2em;
     text-align: left;
-}
-.box img
-{
-
-    float: right;
 }
 .box p
 {
@@ -275,7 +268,26 @@ textarea
     border: none;
     margin: 2em 4em 0em 4em;
     box-sizing: border-box;
-    border-bottom: 2px solid #FFFFFF;
+    /*border-bottom: 2px solid #FFFFFF;*/
+}
+hr
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #ffffff;
+    margin: 0em 8em 0em 4em;
+    padding: 0;
+}
+.button
+{
+    background-color: #C71222;
+    border: none;
+    color: white;
+    padding: 20px 70px;
+    border-radius: 30px;
+    font-size: 15px;
+    margin: 2em 0em 1em 20em;
 }
 @media only screen and (max-width: 768px)
 {
