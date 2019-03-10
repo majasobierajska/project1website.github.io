@@ -128,47 +128,48 @@ section.timeline-text p
     text-align: left;
 }
 /*timeline*/
-.time
-{
-    position: relative;
-}
-.time::after {
-    content: '';
-    position: absolute;
-    width: 3px;
+.time {
     height: 50%;
-    background-color: #D4D4D4;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+    align-items: center;
   }
-.year
-{
-    margin-left: 40%;
-}
-.description::after
-{
+  
+  .time .event {
+    display: contents;
+  }
+  
+  .time .event .year {
+    text-align: right;
+  }
+  
+  .time .event .timeaxis {
+    display: block;
+    width: 3px;
+    height: 100%;
+    background-color: #D4D4D4;
+    margin: 0 auto;
+  }
+  
+  .time .event .timeaxis::after {
     content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-.started
-{
-    margin-top: 10%;
-}
-.description
-{
-    margin-left: 55%;
     position: relative;
-}
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 2px solid #C71222;
+    border-radius: 50%;
+    z-index: 1;
+    display: block;
+    right: 14px;
+    top: calc(50% - 10.5px - 5px);
+  }
+  
+  .time .event .description {
+    text-align: left;
+  }
+  
+  
   .our-service
 {
     display: flex;
@@ -376,6 +377,7 @@ hr
     .container
     {
         display: none;
+        height: 200vh;
     }
     
     .hiring
