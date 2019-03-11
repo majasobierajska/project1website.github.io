@@ -282,12 +282,13 @@ section.contact-us-inputs p
     color: #FFFFFF;
     padding: 3em 10em 0em 5em;
 }
+/* old picture of google map
 .image-map
 {
     width: 100%;
     
 }
-/*.image-map
+.image-map
 {
     background-image: url("map.png");
     background-repeat: no-repeat;
@@ -295,6 +296,11 @@ section.contact-us-inputs p
     /*width: 100%;*/
     /*height: 100%;
 }*/
+.map
+{
+    width: 100%;
+    background-color: grey;
+}
 input
 {
     background-color: #141720;

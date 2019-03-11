@@ -18,16 +18,18 @@ function reply_click(e) {
     target = e.srcElement.dataset.scroll;
     offset = document.getElementById(target).offsetTop
 
-}
+};
 
 //google map js
-function myMap() {
-    var mapProp= {
-      center:new google.maps.LatLng(51.508742,-0.120850),
-      zoom:5,
-    };
-    var map = new google.maps.Map(document.getElementById("map"),mapProp);
-    }
+function initMap() {
+    // The location of Uluru
+    var skytower = {lat: 51.094478, lng: 17.0174455};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 18, center: skytower});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: skytower, map: map});
+  };
 
 //event listener for button
 document.querySelector('.button').addEventListener('click', onClick);
