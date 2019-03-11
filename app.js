@@ -22,12 +22,12 @@ function reply_click(e) {
 
 //google map js
 function initMap() {
-    // The location of Uluru
+    // geo location of skytowe
     var skytower = {lat: 51.094478, lng: 17.0174455};
-    // The map, centered at Uluru
+    // google map, zoomed to the streets
     var map = new google.maps.Map(
         document.getElementById('map'), {zoom: 18, center: skytower});
-    // The marker, positioned at Uluru
+    //  google map marker 
     var marker = new google.maps.Marker({position: skytower, map: map});
   };
 
