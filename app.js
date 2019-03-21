@@ -3,7 +3,7 @@ let offset = 0;
 let call;
 function scroll() {
     if ((offset - document.documentElement.scrollTop) > 0) {
-        document.documentElement.scrollTop += 20
+        document.documentElement.scrollTop += 30
     }
     else {
         clearInterval(call)
@@ -14,7 +14,7 @@ document.querySelector('.navigation-bar').addEventListener("click", reply_click)
 //CallBack Function
 function reply_click(e) {
     e.preventDefault();
-    call = setInterval(scroll, 20);
+    call = setInterval(scroll, 30);
     target = e.srcElement.dataset.scroll;
     offset = document.getElementById(target).offsetTop
 
