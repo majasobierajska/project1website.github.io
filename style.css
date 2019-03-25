@@ -200,7 +200,7 @@ section.our-service h1
 {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
 }
 .box{
     padding: 3em 2em 2em 3em;
@@ -384,6 +384,10 @@ hr
         display: grid;
         grid-template-columns: 1fr;
         height: 100vh;
+    }
+    .time
+    {
+        display: none;
     }
     .container
     {
