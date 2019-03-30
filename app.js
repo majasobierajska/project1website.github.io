@@ -23,28 +23,44 @@ $(document).ready(function(){
       } // End if
     });
   });
-// Add Event Listener to parent Element 
-document.querySelector('.navigation-bar').addEventListener("click", reply_click);
-//CallBack Function
-function reply_click(e) {
-    e.preventDefault();
-    call = setInterval(scroll, 30);
-    target = e.srcElement.dataset.scroll;
-    offset = document.getElementById(target).offsetTop
+// // Add Event Listener to parent Element 
+// document.querySelector('.navigation-bar').addEventListener("click", reply_click);
+// //CallBack Function
+// function reply_click(e) {
+//     e.preventDefault();
+//     call = setInterval(scroll, 30);
+//     target = e.srcElement.dataset.scroll;
+//     offset = document.getElementById(target).offsetTop
 
-};
+// };
 
 //google map js
 function initMap() {
-    // geo location of skytowe
-    var skytower = {lat: 51.094478, lng: 17.0174455};
-    // google map, zoomed to the streets
-    var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 18, center: skytower});
-    //  google map marker 
-    var marker = new google.maps.Marker({position: skytower, map: map});
-  };
+  var skytower = {lat: 51.094478, lng: 17.0174455};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 18,
+    center: skytower,
+  });
 
+  var contentString = '<div id="content">'+
+      '<div id="bodyContent">'+
+      '<p>We are here</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+    position: skytower,
+    map: map,
+    title: 'Skytower'
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+};
 //event listener for button
 document.querySelector('.button').addEventListener('click', onClick);
 function onClick()
