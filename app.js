@@ -23,16 +23,6 @@ $(document).ready(function(){
       } // End if
     });
   });
-// // Add Event Listener to parent Element 
-// document.querySelector('.navigation-bar').addEventListener("click", reply_click);
-// //CallBack Function
-// function reply_click(e) {
-//     e.preventDefault();
-//     call = setInterval(scroll, 30);
-//     target = e.srcElement.dataset.scroll;
-//     offset = document.getElementById(target).offsetTop
-
-// };
 
 //google map js
 function initMap() {
@@ -63,7 +53,9 @@ function initMap() {
 };
 //event listener for button
 document.querySelector('.button').addEventListener('click', onClick);
-function onClick()
+function onClick(e)
 {
-    console.log('Button is clicked')
-};
+   let val;
+   val = e;
+   e.target.innerText = 'Thank you';
+  };
