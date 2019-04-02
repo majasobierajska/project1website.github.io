@@ -332,7 +332,7 @@ hr
     height: 1px;
     border: 0;
     border-top: 2px solid #ffffff;
-    margin: 0em 8em 0em 4em;
+    margin: 2vh 4vh;
     padding: 0;
 }
 .button
@@ -345,6 +345,8 @@ hr
     font-size: 15px;
     margin: 2vh 0vh 1vh 20vh;
 }
+
+
 
 @media only screen and (max-width: 768px)
 {
@@ -454,7 +456,7 @@ hr
         display: grid;
         grid-template-columns: 1fr;
         height: 100hv;
-        width: 100hw;
+        width: 90hw;
     }
     .contact-us
     {
